@@ -1,110 +1,21 @@
-# macOS-specific .gitignore
+# Ignore virtual environments
+.venv/
+project-env/  # Add this if 'project-env' is within your project folder
 
-# General macOS system files
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
+# Ignore Python cache files
+__pycache__/
+*.pyc
 
-# System directories
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Remote file system directories
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# Dependency directories (example for Node.js)
-node_modules/
-
-# Build outputs
-/dist
-/tmp
-/build
-
-# Compiled Source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
-
-# Environment configurations #
-#############################
-.env
-.env.local
-.env.development
-.env.production
-.env.test
-
-# OS generated files #
-######################
-ehthumbs.db
-Thumbs.db
-Thumbs.db:encryptable
-Desktop.ini
-
-# Editor directories and files #
-################################
-# Sublime Text
-*.sublime-workspace
-*.sublime-project
-
-# IntelliJ
-.idea/
-
-# VSCode
+# Ignore VS Code settings
 .vscode/
 
-# Eclipse
-.metadata
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-*.loadpath
-*.recommenders
+# Ignore OS-specific files
+.DS_Store
 
-# Misc #
-#######
-*.sass-cache
-*.pid
-*.pid.lock
-*.seed
-*.state
-.c9/
-*.swp
-*.out
-.history
+# Ignore pyenv local Python version
+.python-version
+
+# Ignore folders
+/Notebooks
+
+
